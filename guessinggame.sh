@@ -3,7 +3,7 @@
 #This script is a game to guess only the number of files in the current directory
 
 success=0;
-answer=$( cat ./README.md | egrep "Number of files" | egrep -o "[0-9]+" )
+answer=$(ls -l ./ | egrep ^[^dt] | wc -l) #get the correct answer
 
 echo "Try guess the number of files in $PWD"
 function guessinggame
