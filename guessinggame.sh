@@ -4,9 +4,10 @@
 
 success=0;
 answer=$( cat ./README.md | egrep "Number of files" | egrep -o "[0-9]+" )
+
 echo "Try guess the number of files in $PWD"
-while [[ success -eq 0 ]]
-do
+function guessinggame
+{
 	read response
 	if [[ $response=~[0-9]+ ]]
 	then
@@ -23,4 +24,8 @@ do
 	else
 		echo "Please try with a number"
 	fi
-done	
+}
+while [[ success -eq 0 ]]
+do
+	guessinggame
+done
