@@ -1,5 +1,5 @@
-# Guessing Game by Luis Alonso Vega Badilla
+# Guessing Game by Luis Alonso Vega Badilla.
 
-sáb 19 dic 23:28:22 CST 2020
+dom 20 dic 11:51:58 CST 2020
 
-Number of lines on guessinggame.sh = 31
+Number of lines on guessinggame.sh = 28

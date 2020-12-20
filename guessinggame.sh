@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-
 #This script is a game to guess only the number of files in the current directory
-
 success=0;
-answer=$(ls -l ./ | egrep ^[^dt] | wc -l) #get the correct answer
-
+answer=$(ls | wc -l) #get the correct answer
 echo "Try guess the number of files in $PWD"
 function guessinggame
 {
